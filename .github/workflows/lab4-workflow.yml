@@ -2,7 +2,7 @@ name: Publish Package to GitHub NPM Registry
 
 on: 
   release:
-    types: released 
+    types: published 
     
 jobs:
     npm-package:
@@ -17,4 +17,5 @@ jobs:
             registry-url: 'https://npm.pkg.github.com/'
         - name: Install
           run: npm install
+
 
